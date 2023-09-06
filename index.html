@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ <!-- font awesome css -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+</head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <!--Link CSS-->
+ <link rel="stylesheet" type="text/css" href="index.css">
+ <!--Link javascript-->
+ <link rel="js" type="javascript--" href="index.js">
+</head>
+<body>
+  <div class="container-fluid">
+    <nav class="navbar header_background">
+        <div class="container-fluid">  
+          <a class="navbar-brand"><img src="ogo-yellowstone.jpg"></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success nav_search" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav_two_background">
+        <div class="container-fluid nav_two_container">
+          <a class="navbar-brand nav_two_a" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active nav_two_a" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_two_a" href="#">Park Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav_two_a" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="mainContent">
+        <div class="mainHeader">
+            <h1>Application Form</h1>
+        </div>
+    <div class="d-flex align-items-start" style="padding-top: 50px; ">
+        <div class="nav flex-column nav-pills me-3 col-md-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link" name="appNav" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-appinfo" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Application Information</button>
+          <button class="nav-link" name="appNav" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Personal Info</button>
+          <button class="nav-link" name="appNav" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Education/Work Experience</button>
+          <button class="nav-link" name="appNav" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Position Applied For</button>
+        </div>
+        <div class="tab-content" id="v-pills-tabContent" name="tabMain">
+          <div class="tab-pane fade" id="v-pills-appinfo" role="tabpanel" aria-labelledby="v-pilld-appinfo-tab" tabindex="0" name="tabpan">
+            <form class="row g-3" style="padding-bottom: 30px;">
+              <div class="col-md-10">
+                <h3 class="warning">BEFORE YOU START THIS APPLICATION</h3>
+                <ul>
+                <li>If you are an individual with disabilities who needs accommodation or you are having difficulty using our web site to apply for employment, please contact the Human Resources team at (307) 344-5324.</li>
+
+                <li>Xanterra Parks & Resorts (Authorized Concessioner of the National Park Service) is an equal opportunity employer and does not discriminate against any individual in any phase of employment on the basis of race, color, creed, religion, sexual orientation, national origin, ancestry, veteran status, age, disability or any other legally protected status under applicable law. AA/EOE M/F/D/V</li>
+                
+                <li>You must be 18 years of age or older to live in employee housing. Will you be 18 years of age or older when you arrive in Yellowstone? </li>
+                <input class="yesButton" type="checkbox">
+                <label for="yesButton">Yes</label>
+               <input class="noButton" type="checkbox">
+               <label for="noButton">No</label>
+               <li>Employees must be 21 years of age or older for jobs requiring the operation of certain vehicles or serving alcohol in lounges/pubs. Are you 21 years of age or older?</li>
+               <input class="yesButton" type="checkbox">
+               <label for="yesButton">Yes</label>
+              <input class="noButton" type="checkbox">
+              <label for="noButton">No</label>
+              <li>
+                If you are hired and meet housing requirements, please indcate your housing preference:
+              </li>
+              <ul>
+                <li>
+              <label for="dormButton">Dormitory (Must be 18+; no housing available for children or pets)</label>
+              <input class="dormButton" type="checkbox">
+            </li>
+              <li>
+              <label for="rvButton">RV or trailer (this is your own self contained vehicle; space is limited)</label>
+              <input class="rvButton" type="checkbox">
+            </li>
+              <li>
+              <label for="rvdetailBtn">RV or trailer details (indicates model, year, length of RV or trailer)</label>
+              <input class="rvdetailBtn" type="checkbox">
+            </li>
+              <li>
+              <label for="localRes">Local Resident:</label>  
+              <input class="localRes" type="checkbox">
+            </li>
+            </ul>
+            </ul>
+                </div>
+              </form>
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-personal-info-tab" tabindex="0" name="tabpan">
+            <form class="row g-3" id="formOne">
+                <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label">First Name</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputPassword4" class="form-label">Last Name</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-3">
+                  <label for="pronouns" class="form-label">Enter preferred pronouns</label>
+                  <input type="text" class="form-control" id="inputPronouns">
+                </div>
+                <div class="col-11">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-11">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-3">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCountry" class="form-label">Country</label>
+                  <select id="inputFirstChoice" class="form-select">
+                    <option selected="selected" value=""> </option>
+                    <option value="US">United States </option>
+                    <option value="AE">United Arab Emirates </option>
+                    <option value="AF">Afghanistan </option>
+                    <option value="AG">Antigua and Barbuda </option>
+                    <option value="AL">Albania </option>
+                    <option value="AM">Armenia </option>
+                    <option value="AM">Zambia </option>
+                    <option value="AN">Netherland Antilles </option>
+                    <option value="AQ">Antarctica </option>
+                    <option value="AR">Argentina </option>
+                    <option value="AS">American Samoa </option>
+                    <option value="AT">Austria </option>
+                    <option value="AU">Australia </option>
+                    <option value="AW">Aruba </option>
+                    <option value="AZ">Azerbaidjan </option>
+                    <option value="BA">Bosnia-Herzegovina </option>
+                    <option value="BB">Barbados </option>
+                    <option value="BD">Bangladesh </option>
+                    <option value="BE">Belgium </option>
+                    <option value="BG">Bulgaria </option>
+                    <option value="BH">Bahrain </option>
+                    <option value="BM">Bermuda </option>
+                    <option value="BO">Bolivia </option>
+                    <option value="BR">Brazil </option>
+                    <option value="BS">Bahamas </option>
+                    <option value="BW">Botswana </option>
+                    <option value="BY">Belarus </option>
+                    <option value="BZ">Belize </option>
+                    <option value="CA">Canada </option>
+                    <option value="CG">Congo </option>
+                    <option value="CH">Switzerland </option>
+                    <option value="CL">Chile </option>
+                    <option value="CM">Cameroon </option>
+                    <option value="CN">China </option>
+                    <option value="CO">Columbia </option>
+                    <option value="CR">Costa Rica </option>
+                    <option value="CS">Former Czechoslovakia </option>
+                    <option value="CZ">Czech Republic </option>
+                    <option value="DE">Germany </option>
+                    <option value="DK">Denmark </option>
+                    <option value="DM">Dominica </option>
+                    <option value="DO">Dominican Republic </option>
+                    <option value="DZ">Algeria </option>
+                    <option value="EC">Ecuador </option>
+                    <option value="EE">Estonia </option>
+                    <option value="EG">Egypt </option>
+                    <option value="ES">Spain </option>
+                    <option value="ET">Ethiopia </option>
+                    <option value="FI">Finland </option>
+                    <option value="FJ">Fiji </option>
+                    <option value="FK">Falkland Islands </option>
+                    <option value="FR">France </option>
+                    <option value="GB">Great Britain </option>
+                    <option value="GD">Grenada </option>
+                    <option value="GE">Georgia </option>
+                    <option value="GF">French Guyana </option>
+                    <option value="GH">Ghana </option>
+                    <option value="GL">Greenland </option>
+                    <option value="GN">Guinea </option>
+                    <option value="GR">Greece </option>
+                    <option value="GT">Guatamala </option>
+                    <option value="GU">Guam (USA) </option>
+                    <option value="GY">Guyana </option>
+                    <option value="HK">Hong Kong </option>
+                    <option value="HN">Honduras </option>
+                    <option value="HR">Croatia </option>
+                    <option value="HT">Haiti </option>
+                    <option value="HU">Hungary </option>
+                    <option value="ID">Indonesia </option>
+                    <option value="IE">Ireland </option>
+                    <option value="IL">Israel </option>
+                    <option value="IN">India </option>
+                    <option value="IQ">Iraq </option>
+                    <option value="IR">Iran </option>
+                    <option value="IS">Iceland </option>
+                    <option value="IT">Italy </option>
+                    <option value="JM">Jamaica </option>
+                    <option value="JO">Jordan </option>
+                    <option value="JP">Japan </option>
+                    <option value="KE">Kenya </option>
+                    <option value="KP">North Korea </option>
+                    <option value="KR">South Korea </option>
+                    <option value="KW">Kuwait </option>
+                    <option value="KY">Cayman Islands </option>
+                    <option value="KZ">Kazakhstan </option>
+                    <option value="LA">Laos </option>
+                    <option value="LB">Lebanon </option>
+                    <option value="LC">St. Lucia </option>
+                    <option value="LI">Liechtenstein </option>
+                    <option value="LK">Sri Lanka </option>
+                    <option value="LR">Liberia </option>
+                    <option value="LT">Lithuania </option>
+                    <option value="LU">Luxembourg </option>
+                    <option value="LV">Latvia </option>
+                    <option value="LY">Libya </option>
+                    <option value="MA">Morocco </option>
+                    <option value="MC">Monaco </option>
+                    <option value="MD">Moldavia </option>
+                    <option value="MG">Madagascar </option>
+                    <option value="YU">Macedonia </option>
+                    <option value="MN">Mongolia </option>
+                    <option value="MQ">Martinique (French) </option>
+                    <option value="MS">Montserrat </option>
+                    <option value="MT">Malta </option>
+                    <option value="MX">Mexico </option>
+                    <option value="MY">Malaysia </option>
+                    <option value="MZ">Mozambique </option>
+                    <option value="NA">Namibia </option>
+                    <option value="NG">Nigeria </option>
+                    <option value="NI">Nicaragua </option>
+                    <option value="NL">Netherlands </option>
+                    <option value="NO">Norway </option>
+                    <option value="NP">Nepal </option>
+                    <option value="NZ">New Zealand </option>
+                    <option value="PA">Panama </option>
+                    <option value="PE">Peru </option>
+                    <option value="PH">Phillipines </option>
+                    <option value="PK">Pakistan </option>
+                    <option value="PL">Poland </option>
+                    <option value="PR">Puerto Rico </option>
+                    <option value="PT">Portugal </option>
+                    <option value="PY">Paraguay </option>
+                    <option value="QA">Qatar </option>
+                    <option value="RO">Romania </option>
+                    <option value="RU">Russian Federation </option>
+                    <option value="RW">Rwanda </option>
+                    <option value="SA">Saudi Arabia </option>
+                    <option value="RS">Serbia </option>
+                    <option value="YU">Serbia and Montenegro </option>
+                    <option value="SD">Sudan </option>
+                    <option value="SE">Sweden </option>
+                    <option value="SG">Singapore </option>
+                    <option value="SI">Slovenia </option>
+                    <option value="SK">Slovak Republic </option>
+                    <option value="SN">Senegal </option>
+                    <option value="SO">Somalia </option>
+                    <option value="SR">Suriname </option>
+                    <option value="SV">El Salvador </option>
+                    <option value="SY">Syria </option>
+                    <option value="SZ">Swaziland </option>
+                    <option value="TC">Turks and Caicos Islands </option>
+                    <option value="TD">Chad </option>
+                    <option value="TH">Thailand </option>
+                    <option value="TJ">Tadjikistan </option>
+                    <option value="TM">Turkmenistan </option>
+                    <option value="TN">Tunisia </option>
+                    <option value="TR">Turkey </option>
+                    <option value="TT">Trinidad and Tabago </option>
+                    <option value="TW">Taiwan </option>
+                    <option value="TZ">Tanzania </option>
+                    <option value="UA">Ukraine </option>
+                    <option value="UG">Uganda </option>
+                    <option value="GB">United Kingdom </option>
+                    <option value="UY">Uruguay </option>
+                    <option value="UZ">Uzbekistan </option>
+                    <option value="VA">Vatican City </option>
+                    <option value="VC">St. Vincent &amp; Grenadines </option>
+                    <option value="VE">Venezuala </option>
+                    <option value="VG">Virgin Islands (British) </option>
+                    <option value="VI">Virgin Islands (USA) </option>
+                    <option value="VN">Vietnam </option>
+                    <option value="WS">Samoa </option>
+                    <option value="YE">Yemen </option>
+                    <option value="ZA">South Africa </option>
+                    <option value="ZR">Zaire </option>
+                    <option value="ZW">Zimbabwe </option>
+                  </select>
+                </div>
+                <div class="col-md-1">
+
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="text" class="form-control" id="email">
+                </div>
+                <div class="col-md-5">
+                  <label for="phone#" class="form-label">Contact Number</label>
+                  <input type="tel" id="phone" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </div>
+              </form>
+          </div>
+          <div class="tab-pane fade formOneWork" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-work-tab" tabindex="0" name="tabpan">
+            <h5 class="employerInfo">Work Experience</h3>
+            <form class="row g-2" id="workForm" style="padding-bottom: 30px;">
+                <div class="col-md-6" id="productionrows">
+                  <label for="inputEmail4" class="form-label">Employer Name</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-5">
+                  <label for="inputPassword4" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputWrkAdd">
+                </div>
+                <div class="col-md-5">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-4">
+                  <label for="start-date" class="for-label">Start Date:</label>
+                  <input type="date" class="form-control" id="inputStartDate">
+                </div>
+                <div class="col-md-4">
+                  <label for="end-date" class="for-label">End-Date</label>
+                  <input type="date" class="form-control" id="inputEndDate">
+                </div>
+                <div class="col-md-4">
+                  <label for="contact" class="for-label">May we contact this employer?</label><br>
+                <input class="yesButton" type="checkbox">
+                <label for="yesButton">Yes</label>
+               <input class="noButton" type="checkbox">
+               <label for="noButton">No</label>
+                </div>
+                <div class="col-md-2">
+                  <input type="button" id="moreFields" value="Add Work">
+                  <!--Did'nt have enough time to javascript the functionality of adding another work form on button click-->
+                </div>
+              </form>
+              <h5>Education</h3>
+              <form class="row g-2" style="padding-bottom: 30px;">
+              <div class="col-md-4">
+                <label for="school" class="form-label">Name of School</label>
+                <input id="school" class="form-control" type="text">
+              </div>
+              <div class="col-md-3">
+                <label for="schlLocation" class="form-label">School Location</label>
+                <input type="text" class="form-control" id="schlLocation">
+              </div>
+              <div class="col-md-4">
+                <label class="form-label" for="schoolDegree">Degree Received</label>
+                <input type="text" class="form-control" id="schoolDegree">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="schoolAreaStudy">Field of Study</label>
+                <input type="text" class="form-control" id="schoolAreaStudy">
+              </div>
+              <div class="col-md-6" id="gradBx">
+                <label class="form-label" for="graduate">Graduated?</label><br>
+                <label class="form-label" for="gradYes">Yes</label>
+              <input type="checkbox" class="gradYes">
+              <label class="form-label" for="gradNo">No</label>
+              <input type="checkbox" class="gradNo">
+              </div>
+              <div class="col-md-2">
+                <input type="button" value="Add Education">
+              </div>
+              </form>
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-position-tab" tabindex="0" name="tabpan">
+            <p>Please select the position(s) that you are applying for. Asterisks(***) by a job position indicates that little or no experience needed. The letters D.L. inidcates the position requires a valid Drivers License. If you desire an internship, please select that from the options.</p>
+            <form class="row g-2" style="padding-bottom: 30px;">
+            <div class="col-md-3">
+            <label for="firstChoice" class="form-label">Choose Position:</label>
+          <select id="inputFirstChoice" class="form-select">
+            <option>Choose...</option>
+                                <option>Dining Room Server Assistant*** </option>
+                                <option>Employee Dining Room Crew*** </option>
+                                <option>Fast Food Crew*** </option>
+                                <option>Kitchen Crew*** </option>
+                                <option>Laundry Help*** </option>
+                                <option>Room Attendant*** </option>
+                                <option>Activities Sales Agent </option>
+                                <option>Administrative Assistant Maintenance </option>
+                                <option>Asst. HR Manager </option>
+                                <option>Audit Clerk </option>
+                                <option>Bar Lead </option>
+                                <option>Barista </option>
+                                <option>Bartender </option>
+                                <option>Bell Porter </option>
+                                <option>Boiler Technician (D.L.) </option>
+                                <option>Bus Driver/Guide (D.L.) </option>
+                                <option>Bus Service Person (D.L.) </option>
+                                <option>Cafeteria Management </option>
+                                <option>Camper Services Attendants </option>
+                                <option>Campground Attendant (D.L.) </option>
+                                <option>Campground Management </option>
+                                <option>Carpenter (D.L.) </option>
+                                <option>Carpet Cleaning Technician (D.L.) </option>
+                                <option>Chef </option>
+                                <option>Cocktail Server </option>
+                                <option>Cook </option>
+                                <option>Cookout Entertainer </option>
+                                <option>Dining Room Host </option>
+                                <option>Dining Room Host Lead </option>
+                                <option>Dining Room Management </option>
+                                <option>Dining Room Server </option>
+                                <option>Distribution Center Associate </option>
+                                <option>Distribution Center Truck Driver (D.L.) </option>
+                                <option>Distribution Lead </option>
+                                <option>Dock Help (D.L.) </option>
+                                <option>Dorm Custodian </option>
+                                <option>Electrician (D.L.) </option>
+                                <option>Employee Dining Room Management </option>
+                                <option>Employee Pub Crew/Lead </option>
+                                <option>Fast Food Management </option>
+                                <option>Finish Floor Supervisor </option>
+                                <option>Fire Systems Technician (D.L.) </option>
+                                <option>Floor Cleaning Technician (D.L.) </option>
+                                <option>Food and Beverage Management </option>
+                                <option>Food and Beverage Office Assistant </option>
+                                <option>Front Office Management </option>
+                                <option>Furniture Mover (D.L.) </option>
+                                <option>General Accounting Office </option>
+                                <option>General Maintenance (D.L.) </option>
+                                <option>Guest Services Agent </option>
+                                <option>Guest Services Agent (Campground) </option>
+                                <option>Heavy Equipment Operator (D.L.) </option>
+                                <option>Housekeeping Management </option>
+                                <option>Housekeeping Room Inspector </option>
+                                <option>Housekeeping Trainer </option>
+                                <option>Housekeeping Office Assistant </option>
+                                <option>Housing Manager </option>
+                                <option>Internship </option>
+                                <option>Kitchen Technician (D.L.) </option>
+                                <option>Laundry Technician (D.L.) </option>
+                                <option>Laundry Truck Driver (D.L.) </option>
+                                <option>Linen Truck Driver  (D.L.) </option>
+                                <option>Location Controller/Assistant </option>
+                                <option>Locksmith (D.L.) </option>
+                                <option>Marina Fishing Guide (D.L.) </option>
+                                <option>Marina Manager (D.L.) </option>
+                                <option>Night Auditor </option>
+                                <option>Night Guest Services Agent </option>
+                                <option>Painter (D.L.) </option>
+                                <option>Pantry Supervisor </option>
+                                <option>Personnel Management </option>
+                                <option>Pianist </option>
+                                <option>Plumber (D.L.) </option>
+                                <option>Porter </option>
+                                <option>Preservation Maintenance Crew Craftsperson </option>
+                                <option>Recreation Coordinator (D.L.) </option>
+                                <option>Recreation Supervisor (D.L.) </option>
+                                <option>Recycling Technician (D.L.) </option>
+                                <option>Reservations Sales Agent </option>
+                                <option>Residence Coordinator </option>
+                                <option>Retail Management </option>
+                                <option>Retail Sales Associate </option>
+                                <option>R&amp;M Staff Assistant </option>
+                                <option>Scenic Cruise Operator (D.L.) </option>
+                                <option>Seamstress </option>
+                                <option>Security Guard And Location Safety (D.L.) </option>
+                                <option>Senior Guest Services Agent (Campground) </option>
+                                <option>Snack Shop / Deli Supervisor </option>
+                                <option>Sous Chef </option>
+                                <option>Steward </option>
+                                <option>Storekeeper </option>
+                                <option>Tour Guide (D.L.) </option>
+                                <option>Touring Car Driver- Interpretive Guide Non CDL (D.L.) </option>
+                                <option>Traveling Night Auditor </option>
+                                <option>Vending Clerk </option>
+                                <option>Vending Driver (D.L.) </option>
+                                <option>Vending Service Technician </option>
+                                <option>Warehouse Manager </option>
+                                <option>Warehouse Help </option>
+                                <option>Warehouse Driver (OFI) </option>
+                                <option>Wash Deck Supervisor </option>
+                                <option>Wash Deck Lead </option>
+                                <option>Wrangler/Driver </option>
+          </select>  
+          </div>
+          
+          <div class="col-md-3" style="padding-left: 30px;">
+            <p>Do you have a vaid Driver's License?</p>
+            <input class="yesButton2" type="checkbox">
+            <label for="yesButton2">Yes</label>
+            <input class="noButton2" type="checkbox">
+            <label for="noButton2">No</label>
+          </div>
+          <div class="col-md-6">
+            <p>Summer employment ends Novemeber 1st each year. Please enter possible start and end date.</p>
+            <label class="for-label">Start Date:</label>
+            <input type="datetime" class="startingDate">
+            <label class="for-label">End Date:</label>
+            <input type="datetime" class="endingDate">
+          </div>
+          <div class="col-md-4">
+            <p>Are you currently employed?</p>
+            <input class="yesButton2" type="checkbox">
+            <label for="yesButton2">Yes</label>
+            <input class="noButton2" type="checkbox">
+            <label for="noButton2">No</label>
+          </div>
+          <div class="col-md-5">
+            <p>Have you ever applied for this company before?</p>
+            <input class="yesButton2" type="checkbox">
+            <label for="yesButton2">Yes</label>
+            <input class="noButton2" type="checkbox">
+            <label for="noButton2">No</label>
+          </div>
+          <div class="col-md-2">
+            <p>If so when?</p>
+            <input type="text">
+          </div>
+          <div class="col-md-2" id="appSubmit">
+          <input type="button" id="submit" value="Submit Application">
+          </div>
+          <div class="col-md-2" id="appSave" >
+          <input type="button" id="save" value="Save For Later">
+        </div>
+        </div>
+      </form>
+        
+        </div>
+      </div>
+</div>
+<footer class="mainFooter">
+  <div class="contentFooter">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <a class="navbar-brand"><img src="ogo-yellowstone.jpg" alt="yellowstone logo"></a>
+          <div class="row">
+            <div class="col">
+              <div class="row">
+            <p class="footerHeader"><small>Yellowstone National Park</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <a href="#" class="footercontact" style="border: 1px solid white; color: white; margin: auto; margin-bottom: 15px;">CONTACT US</a>
+                  <a href="#" class="footercontact" style="border: 1px solid white; color: white; margin: auto; margin-bottom: 15px;">PARK QUESTIONS</a>
+                  <a href="#" class="footercontact" style="border: 1px solid white; color: white; margin: auto; margin-bottom: 15px;">LOCATIONS</a>
+                  <a href="#" class="footercontact" style="border: 1px solid white; color: white; margin: auto; margin-bottom: 15px;">CAREERS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

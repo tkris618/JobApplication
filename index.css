@@ -1,0 +1,69 @@
+
+.main_body{
+    background-color: #e8f2e3;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid black;
+    margin: 25px 50px 75px 100px;
+}
+.navbar bg-body-tertiary {
+    background-color: #6B654B;
+}
+h1{
+    text-align: center;
+    color: #0D5F82;
+}
+.warning {
+    color: red;
+}
+button[name=appNav] {
+    display: inline-block;
+}
+#gradBx{
+    padding-left: 30px;
+}
+
+.header_background{
+    background-color: #9BBFB6 !important;
+}
+
+.nav_two_background {
+    background-color: #0F6C95 !important;
+}
+.nav_two_container {
+    color: white !important;
+}
+.nav_two_a {
+    color: white !important;
+}
+.nav_search {
+    background-color: #AECDA2 !important;
+}
+.mainFooter {
+    background-image: url(IMG-4118.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding-top: 60px;
+    
+}
+.footerHeader {
+    color: white;
+}
+.v-pills-tabContent {
+    border: 5px solid #613A3A !important;
+}
+div[name="tabpan"] {
+    padding: 15px;
+    margin-bottom: 30px;
+    box-shadow: #F7F2F2 0px 5px 15px;
+}
+#formOne {
+    padding-bottom: 30px !important; 
+    margin-left: 70px !important;
+}
+#submit{
+    background-color: #b2def1;
+}
+#save {
+    background-color: #b2def1;
+}
